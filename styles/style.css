@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  background: #2b2b2b; /* adjust if needed */
+  background: #2b2b2b; 
   font-family: 'Poppins', sans-serif;
 }
 
 /* TOP BAR */
 .topbar {
   width: 100%;
-  height: 80px; /* enough space */
+  height: 80px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 5px;   /* as per your spec */
-  padding-right: 50px; /* adjust spacing */
+  padding-left: 5px;  
+  padding-right: 50px; 
 }
 
 /* WALLET */
@@ -33,7 +33,7 @@ body {
 .actions {
   display: flex;
   align-items: center;
-  gap: 30px; /* spacing between signup and login */
+  gap: 30px; 
 }
 
 /* SIGN UP */
@@ -62,8 +62,8 @@ body {
 
 /* LOGIN BUTTON */
 .login-btn {
-  background-color: #bfaff2; /* soft purple */
-  color: #333; /* dark text */
+  background-color: #bfaff2; 
+  color: #333; 
 
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -75,11 +75,11 @@ body {
 
   margin-top: 20px;
 
-  width: 175px;   /* adjust as needed */
+  width: 175px;   
   height: 50px;
 
   border: none;
-  border-radius: 15px; /* makes it pill-shaped */
+  border-radius: 15px; 
 
   display: flex;
   align-items: center;
@@ -266,7 +266,7 @@ body {
   margin-top: 100px;
   margin-left: 200px;
 
-  background: #fef5df; /* light beige background like design */
+  background: #fef5df; 
   border-radius: 30px;
 
   display: flex;
@@ -359,8 +359,8 @@ body {
   margin-top: 140px;
 
   display: flex;
-  justify-content: center; /* center all items */
-  gap: 120px; /* spacing between columns */
+  justify-content: center; 
+  gap: 120px; 
   text-align: center;
 }
 
@@ -605,14 +605,14 @@ body {
 .testimonial-section {
   display: flex;
   justify-content: center;
-  margin-top: 120px; /* adjust spacing from above section */
+  margin-top: 120px; 
 }
 
 /* CARD */
 .testimonial-card {
-  width: 1250px; /* you can tweak */
+  width: 1250px; 
   box-sizing: border-box;
-  background: #bfb0f2; /* purple background */
+  background: #bfb0f2; 
   border-radius: 30px;
   padding: 100px 0;
   position: relative;
@@ -640,7 +640,7 @@ body {
   line-height: 40px;
   letter-spacing: 0%;
   color: #2d2d2d;
-  margin: 0 0 60px 0; /* space before avatar */
+  margin: 0 0 60px 0; 
 }
 
 /* =========================
@@ -725,9 +725,7 @@ body {
   letter-spacing: 3px;
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
+
 .contact-section {
   display: flex;
   justify-content: space-between;
@@ -843,11 +841,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 50px; /* INCREASE this value (e.g., 50px) to push the wallet section inward */
+  margin-left: 50px; 
 }
 
 .footer-right {
-  margin-right: 50px; /* INCREASE this value (e.g., 50px) to push the newsletter section inward */
+  margin-right: 50px; 
 } 
 
 .footer-logo {
@@ -946,10 +944,6 @@ body {
   box-shadow: 0 2px 5px rgba(191, 175, 242, 0.4);
 }
 
-/* =========================
-   PREMIUM "WOW" ANIMATIONS
-========================= */
-
 /* 1. Page Load Staggered Entry */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
@@ -1046,48 +1040,6 @@ body {
 
 .feature-icon .shine { animation: levitate 4s ease-in-out infinite reverse; }
 
-/* ==================================
-   ULTRA-PREMIUM AWWWARDS LEVEL EFFECTS
-   ================================== */
-
-/* 7. Animated Morphing Blob behind Hero Image */
-.hero-image {
-  position: relative;
-  z-index: 1;
-}
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: -30%; left: -30%; right: -30%; bottom: -30%;
-  background: linear-gradient(45deg, #bfb0f2, #ffffff, #a89bd6);
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  z-index: -1;
-  animation: morphingBlob 12s ease-in-out infinite alternate;
-  filter: blur(50px);
-  opacity: 0.3;
-  pointer-events: none;
-  /* Opposite direction parallax using modern translate */
-  translate: calc(var(--mouseX, 0px) * -0.15) calc(var(--mouseY, 0px) * -0.15);
-  transition: translate 0.1s ease-out;
-}
-@keyframes morphingBlob {
-  0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; transform: rotate(0deg) scale(1); }
-  50% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 40%; transform: rotate(180deg) scale(1.1); }
-  100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; transform: rotate(360deg) scale(1); }
-}
-
-/* 8. Cinematic Text Reveal for Hero Title */
-.hero-title {
-  background: linear-gradient(to right, #ffffff 20%, #bfb0f2 40%, #a89bd6 60%, #ffffff 80%);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shineText 5s linear infinite;
-}
-@keyframes shineText {
-  to { background-position: 200% center; }
-}
 
 /* 9. True 3D Glassmorphism Hover on Feature Cards */
 .feature-item {
